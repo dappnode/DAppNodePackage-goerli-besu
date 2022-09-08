@@ -1,12 +1,12 @@
 [
     {
         "labels": {
-            "package": "besu.dnp.dappnode.eth",
-            "service": "besu.dnp.dappnode",
+            "package": "besu-goerli.dnp.dappnode.eth",
+            "service": "besu-goerli.dnp.dappnode",
             "__metrics_path__": "/metrics"
         },
         "targets": [
-            "besu.dnp.dappnode:9545"
+            "besu-goerli.dnp.dappnode:9545"
         ]
     }
 ]
