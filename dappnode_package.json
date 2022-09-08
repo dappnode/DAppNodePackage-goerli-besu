@@ -1,7 +1,7 @@
 {
   "name": "besu.dnp.dappnode.eth",
   "version": "1.2.1",
-  "description": "An enterprise-grade Java-based, Apache 2.0 licensed Ethereum Execution Layer client",
+  "description": "An enterprise-grade Java-based, Apache 2.0 licensed Ethereum Execution Layer client for the Goerli Testnet",
   "shortDescription": "Java-based Ethereum Client",
   "upstreamVersion": "22.7.2",
   "upstreamRepo": "hyperledger/besu",
@@ -17,30 +17,30 @@
   "chain": "ethereum",
   "exposable": [
     {
-      "name": "Besu JSON RPC",
-      "description": "JSON RPC endpoint for Besu",
-      "serviceName": "besu",
+      "name": "Besu Goerli JSON RPC",
+      "description": "JSON RPC endpoint for Besu Goerli",
+      "serviceName": "besu-goerli",
       "port": 8545
     },
     {
-      "name": "Besu JSON RPC (WS)",
-      "description": "JSON RPC WebSocket endpoint for Besu",
-      "serviceName": "besu",
+      "name": "Besu Goerli JSON RPC (WS)",
+      "description": "JSON RPC WebSocket endpoint for Besu Goerli",
+      "serviceName": "besu-goerli",
       "port": 8546
     }
   ],
   "links": {
-    "endpoint": "besu.dappnode:8545",
-    "apiEngine": "besu.dapppnode:8551",
+    "endpoint": "besu-goerli.dappnode:8545",
+    "apiEngine": "besu-goerli.dapppnode:8551",
     "homepage": "https://github.com/hyperledger/besu",
     "docs": "https://besu.hyperledger.org/en/stable/"
   },
   "bugs": {
-    "url": "https://github.com/dappnode/DAppNodePackage-Besu/issues"
+    "url": "https://github.com/dappnode/DAppNodePackage-Besu-Goerli/issues"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/dappnode/DAppNodePackage-Besu"
+    "url": "https://github.com/dappnode/DAppNodePackage-Besu-Goerli.git"
   },
   "license": "Apache-2.0"
 }
