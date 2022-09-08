@@ -1,0 +1,75 @@
+version: "2"
+fields:
+  - title: Config mode
+    id: config_mode
+    description: >-
+      You must choose a config method. Most users should choose
+      "normal" mode, but more advanced users will be able to customize the
+      installation of Besu and its environment variables.
+    target:
+      type: environment
+      name: CONFIG_MODE
+      service: node
+    enum:
+      - "normal"
+      - "advanced"
+  - title: Storage Format
+    id: storage_format
+    description: >-
+      Besu can use one of two storage formats, Forest of Tries or Bonsai Tries. 
+
+
+      You can read about the differences [here](https://besu.hyperledger.org/en/stable/Concepts/Data-Storage-Formats). 
+
+
+      Standard is BONSAI.
+    target:
+      type: environment
+      name: STORAGE_FORMAT
+      service: node
+    enum:
+      - BONSAI
+      - FOREST
+    required: true
+    if: { "config_mode": { "enum": ["advanced"] } }
+  - title: Sync Mode
+    id: sync_mode
+    description: >-
+      Besu can use one of three sync modes, FULL (slow, archive node), FAST (fast, full node) or X_SNAP (fastest, experimental and works with BONSAI). 
+
+
+      You can read about the differences [here](https://besu.hyperledger.org/en/stable/Reference/CLI/CLI-Syntax/#sync-mode). 
+
+
+      Standard is FULL.
+    target:
+      type: environment
+      name: SYNC_MODE
+      service: node
+    enum:
+      - FAST
+      - FULL
+      - X_SNAP
+    required: true
+    if: { "config_mode": { "enum": ["advanced"] } }
+  - title: Enable WebSocket API
+    id: enable_ws
+    description: >-
+      You can enable or disable the WebSocket API here, if needed.
+    target:
+      type: environment
+      name: WS_ENABLED
+      service: node
+    enum:
+      - "true"
+      - "false"
+    required: true
+  - title: Max HTTP RPC connections
+    id: max_rpc_connections_http
+    description: >-
+      To prevent flooding of the node, there is a sensible max connections limit. You can alter this variable here.
+    target:
+      type: environment
+      name: MAX_HTTP_CONNECTIONS
+      service: besu.public.dappnode.eth
+    if: { "config_mode": { "enum": ["advanced"] } }

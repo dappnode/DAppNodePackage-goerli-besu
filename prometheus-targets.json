@@ -1,0 +1,12 @@
+[
+    {
+        "labels": {
+            "package": "besu.dnp.dappnode.eth",
+            "service": "besu.dnp.dappnode",
+            "__metrics_path__": "/metrics"
+        },
+        "targets": [
+            "besu.dnp.dappnode:9545"
+        ]
+    }
+]
