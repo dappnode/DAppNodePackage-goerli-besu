@@ -9,7 +9,7 @@ fields:
     target:
       type: environment
       name: CONFIG_MODE
-      service: node
+      service: besu
     enum:
       - "normal"
       - "advanced"
@@ -26,7 +26,7 @@ fields:
     target:
       type: environment
       name: STORAGE_FORMAT
-      service: node
+      service: besu
     enum:
       - BONSAI
       - FOREST
@@ -41,11 +41,11 @@ fields:
       You can read about the differences [here](https://besu.hyperledger.org/en/stable/Reference/CLI/CLI-Syntax/#sync-mode). 
 
 
-      Standard is FULL.
+      Standard is FAST.
     target:
       type: environment
       name: SYNC_MODE
-      service: node
+      service: besu
     enum:
       - FAST
       - FULL
@@ -59,7 +59,7 @@ fields:
     target:
       type: environment
       name: WS_ENABLED
-      service: node
+      service: besu
     enum:
       - "true"
       - "false"
@@ -71,5 +71,5 @@ fields:
     target:
       type: environment
       name: MAX_HTTP_CONNECTIONS
-      service: besu.public.dappnode.eth
+      service: node
     if: { "config_mode": { "enum": ["advanced"] } }
