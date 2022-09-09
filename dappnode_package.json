@@ -42,5 +42,6 @@
     "type": "git",
     "url": "https://github.com/dappnode/DAppNodePackage-Besu-Goerli.git"
   },
-  "license": "Apache-2.0"
+  "license": "Apache-2.0",
+  "globalEnvs": [{ "envs": ["_DAPPNODE_GLOBAL_CONSENSUS_CLIENT_PRATER"], "services": ["goerli-geth.dnp.dappnode.eth"] }]
 }
