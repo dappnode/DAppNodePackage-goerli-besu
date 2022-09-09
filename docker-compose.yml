@@ -1,6 +1,6 @@
 version: "3.5"
 services:
-  node:
+  besu-goerli:
     build:
       context: build
       args:
@@ -17,9 +17,9 @@ services:
       CONFIG_MODE: normal
       WS_ENABLED: "true"
       MAX_HTTP_CONNECTIONS: "170"
-      P2P_PORT: "30414"
+      P2P_PORT: "30415"
       BESU_OPTS: ""
-    image: "node.besu.dnp.dappnode.eth:1.2.1"
+    image: "besu-goerli.dnp.dappnode.eth:1.0.0"
     restart: unless-stopped
 volumes:
   data: {}
