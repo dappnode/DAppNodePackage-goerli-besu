@@ -9,7 +9,7 @@ fields:
     target:
       type: environment
       name: CONFIG_MODE
-      service: besu
+      service: besu-goerli
     enum:
       - "normal"
       - "advanced"
@@ -26,7 +26,7 @@ fields:
     target:
       type: environment
       name: STORAGE_FORMAT
-      service: besu
+      service: besu-goerli
     enum:
       - BONSAI
       - FOREST
@@ -45,7 +45,7 @@ fields:
     target:
       type: environment
       name: SYNC_MODE
-      service: besu
+      service: besu-goerli
     enum:
       - FAST
       - FULL
@@ -59,7 +59,7 @@ fields:
     target:
       type: environment
       name: WS_ENABLED
-      service: besu
+      service: besu-goerli
     enum:
       - "true"
       - "false"
@@ -71,5 +71,5 @@ fields:
     target:
       type: environment
       name: MAX_HTTP_CONNECTIONS
-      service: node
+      service: besu-goerli
     if: { "config_mode": { "enum": ["advanced"] } }
