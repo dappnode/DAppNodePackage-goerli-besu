@@ -6,8 +6,8 @@ services:
       args:
         UPSTREAM_VERSION: 22.7.2
     ports:
-      - "30415:30415/tcp"
-      - "30415:30415/udp"
+      - "30814:30814/tcp"
+      - "30814:30814/udp"
     volumes:
       - "data:/var/lib/besu-goerli"
     environment:
@@ -17,7 +17,7 @@ services:
       CONFIG_MODE: normal
       WS_ENABLED: "true"
       MAX_HTTP_CONNECTIONS: "170"
-      P2P_PORT: "30415"
+      P2P_PORT: "30814"
       BESU_OPTS: ""
     image: "besu-goerli.dnp.dappnode.eth:1.0.0"
     restart: unless-stopped
