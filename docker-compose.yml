@@ -2,14 +2,14 @@ version: "3.5"
 services:
   besu-goerli:
     build:
-      context: build
+      context: .
       args:
         UPSTREAM_VERSION: 22.7.2
     ports:
       - "30814:30814/tcp"
       - "30814:30814/udp"
     volumes:
-      - "data:/var/lib/besu-goerli"
+      - "data:/besu-goerli"
     environment:
       EXTRA_OPTS: ""
       STORAGE_FORMAT: BONSAI
@@ -19,7 +19,7 @@ services:
       MAX_HTTP_CONNECTIONS: "170"
       P2P_PORT: "30814"
       BESU_OPTS: ""
-    image: "besu-goerli.dnp.dappnode.eth:1.0.0"
+    image: "besu-goerli.besu-goerli.dnp.dappnode.eth:1.0.0"
     restart: unless-stopped
 volumes:
   data: {}
