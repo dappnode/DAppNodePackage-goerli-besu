@@ -2,7 +2,7 @@ version: "3.5"
 services:
   besu-goerli:
     build:
-      context: .
+      context: build
       args:
         UPSTREAM_VERSION: 22.7.2
     ports:
