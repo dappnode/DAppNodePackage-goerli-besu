@@ -2,14 +2,14 @@ version: "3.5"
 services:
   besu-goerli:
     build:
-      context: .
+      context: build
       args:
         UPSTREAM_VERSION: 22.7.2
     ports:
       - "30814:30814/tcp"
       - "30814:30814/udp"
     volumes:
-      - "data:/besu-goerli"
+      - "data:/var/lib/besu-goerli"
     environment:
       EXTRA_OPTS: ""
       STORAGE_FORMAT: BONSAI
