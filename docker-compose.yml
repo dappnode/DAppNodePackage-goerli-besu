@@ -19,7 +19,7 @@ services:
       MAX_HTTP_CONNECTIONS: "170"
       P2P_PORT: "30814"
       BESU_OPTS: ""
-    image: "besu-goerli.besu-goerli.dnp.dappnode.eth:1.0.0"
+    image: "besu-goerli.besu-goerli.dnp.dappnode.eth:0.1.0"
     restart: unless-stopped
 volumes:
   data: {}
