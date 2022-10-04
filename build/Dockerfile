@@ -9,7 +9,7 @@ USER root
 RUN apt update && apt install curl -y
 
 RUN mkdir /var/lib/besu-goerli
-RUN chown -R besu:besu /var/lib/besu-goerli
+RUN chown -R besu:besu /var/lib/goerli-besu
 
 USER besu
 
