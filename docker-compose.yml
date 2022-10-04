@@ -9,7 +9,7 @@ services:
       - "30814:30814/tcp"
       - "30814:30814/udp"
     volumes:
-      - "data:/var/lib/besu-goerli"
+      - "data:/var/lib/goerli-besu"
     environment:
       EXTRA_OPTS: ""
       STORAGE_FORMAT: BONSAI

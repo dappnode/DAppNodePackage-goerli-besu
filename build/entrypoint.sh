@@ -41,7 +41,7 @@ exec besu --rpc-ws-host='0.0.0.0' \
   --data-storage-format=$STORAGE_FORMAT \
   --metrics-enabled \
   --metrics-host='0.0.0.0' \
-  --data-path=/var/lib/besu-goerli \
+  --data-path=/var/lib/goerli-besu \
   --sync-mode=$SYNC_MODE \
   --rpc-http-max-active-connections=$MAX_HTTP_CONNECTIONS \
   --p2p-port=$P2P_PORT \
