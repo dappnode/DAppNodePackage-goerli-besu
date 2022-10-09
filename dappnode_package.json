@@ -17,13 +17,13 @@
   "chain": "ethereum",
   "exposable": [
     {
-      "name": "Besu Goerli JSON RPC",
+      "name": "Goerli Besu JSON RPC",
       "description": "JSON RPC endpoint for Besu Goerli",
       "serviceName": "goerli-besu",
       "port": 8545
     },
     {
-      "name": "Besu Goerli JSON RPC (WS)",
+      "name": "Goerli Besu JSON RPC (WS)",
       "description": "JSON RPC WebSocket endpoint for Besu Goerli",
       "serviceName": "goerli-besu",
       "port": 8546

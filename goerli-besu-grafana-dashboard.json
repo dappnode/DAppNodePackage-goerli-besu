@@ -18,7 +18,7 @@
       }
     ]
   },
-  "description": "Provides an overview of Besu-Goerli nodes",
+  "description": "Provides an overview of Goerli-Besu nodes",
   "editable": true,
   "gnetId": 10273,
   "graphTooltip": 0,
