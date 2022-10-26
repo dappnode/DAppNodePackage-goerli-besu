@@ -7,7 +7,7 @@
   "upstreamRepo": "hyperledger/besu",
   "upstreamArg": "UPSTREAM_VERSION",
   "type": "service",
-  "author": "Nabsku <thenabsku@gmail.com> (https://github.com/Nabsku)",
+  "author": "DAppNode Association <admin@dappnode.io> (https://github.com/dappnode)",
   "contributors": [
     "Nabsku <thenabsku@gmail.com> (https://github.com/Nabsku)",
     "Voss <alex@visnovaventures.com> (https://github/alexpeterson91)"
@@ -50,6 +50,6 @@
     }
   ],
   "requirements": {
-    "minimumDappnodeVersion": "0.2.58"
+    "minimumDappnodeVersion": "0.2.59"
   }
 }
