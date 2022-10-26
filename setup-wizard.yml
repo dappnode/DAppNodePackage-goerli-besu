@@ -35,7 +35,7 @@ fields:
   - title: Sync Mode
     id: sync_mode
     description: >-
-      Besu can use one of three sync modes, FULL (slow, archive node), FAST (fast, full node) or X_SNAP (fastest, experimental and works with BONSAI). 
+      Besu can use one of four sync modes, FULL (slow, archive node), FAST (fast, full node) or X_SNAP Or the newer X_CHECKPOINT (fastest, experimental and works with BONSAI). 
 
 
       You can read about the differences [here](https://besu.hyperledger.org/en/stable/Reference/CLI/CLI-Syntax/#sync-mode). 
@@ -50,20 +50,9 @@ fields:
       - FAST
       - FULL
       - X_SNAP
+      - X_CHECKPOINT
     required: true
     if: { "config_mode": { "enum": ["advanced"] } }
-  - title: Enable WebSocket API
-    id: enable_ws
-    description: >-
-      You can enable or disable the WebSocket API here, if needed.
-    target:
-      type: environment
-      name: WS_ENABLED
-      service: goerli-besu
-    enum:
-      - "true"
-      - "false"
-    required: true
   - title: Max HTTP RPC connections
     id: max_rpc_connections_http
     description: >-
