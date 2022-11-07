@@ -33,6 +33,7 @@ exec besu --rpc-ws-host='0.0.0.0' \
   --rpc-http-host='0.0.0.0' \
   --rpc-http-enabled=true \
   --host-allowlist=* \
+  --rpc-ws-host='0.0.0.0' \
   --rpc-http-cors-origins=* \
   --engine-rpc-port=8551 \
   --engine-host-allowlist=* \
