@@ -46,7 +46,7 @@
   "globalEnvs": [
     {
       "envs": ["CONSENSUS_CLIENT_PRATER"],
-      "services": ["goerli-besu.dnp.dappnode.eth"]
+      "services": ["goerli-besu"]
     }
   ],
   "requirements": {

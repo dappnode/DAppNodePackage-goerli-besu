@@ -29,11 +29,10 @@ curl -X POST "http://my.dappnode/data-send?key=jwt&data=${JWT}"
 
 exec besu --rpc-ws-host='0.0.0.0' \
   --network=goerli \
-  --rpc-ws-enabled=$WS_ENABLED \
+  --rpc-ws-enabled=true \
   --rpc-http-host='0.0.0.0' \
   --rpc-http-enabled=true \
   --host-allowlist=* \
-  --rpc-ws-host='0.0.0.0' \
   --rpc-http-cors-origins=* \
   --engine-rpc-port=8551 \
   --engine-host-allowlist=* \
