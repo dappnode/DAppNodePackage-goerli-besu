@@ -16,7 +16,7 @@ This package by default uses the newer BONSAI storage structure. You can switch 
 | 8546 | WebSocket| No      |
 | 8551 | Engine API | No      |
 | 9545 | Metrics  | No      |
-| 30414 | Peer Traffic| Yes  |
+| 30814 | Peer Traffic| Yes  |
 
 # General
 
