@@ -1,4 +1,4 @@
-## Goerli Besu (Execution Client)
+# Goerli Besu (Execution Client)
 
 Welcome to your Post Merge Goerli/Prater Besu Execution Layer Client
 

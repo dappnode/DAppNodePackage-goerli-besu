@@ -53,6 +53,19 @@ fields:
       - X_CHECKPOINT
     required: true
     if: { "config_mode": { "enum": ["advanced"] } }
+  - title: High Spec Mode
+    id: high_spec_mode
+    description: >-
+      Newer CPUs can hande the RocksDB database better. If you have a newer CPU, you can enable this option to improve performance.
+    target:
+      type: environment
+      name: HIGH_SPEC_MODE
+      service: goerli-besu
+    enum:
+      - "false"
+      - "true"
+    required: true
+    if: { "config_mode": { "enum": ["advanced"] } }
   - title: Max HTTP RPC connections
     id: max_rpc_connections_http
     description: >-

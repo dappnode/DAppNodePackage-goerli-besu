@@ -1,5 +1,10 @@
 #!/bin/sh
 
+# Enable RocksDB high spec for newer CPUs (4-5 years old max) if set.
+if [$HIGH_SPEC_ENABLED = "true"]; then
+  echo "High spec enabled"
+  EXTRA_OPTS="--Xplugin-rocksdb-high-spec-enabled ${EXTRA_OPTS}"
+
 case "$_DAPPNODE_GLOBAL_CONSENSUS_CLIENT_PRATER" in
 "prysm-prater.dnp.dappnode.eth")
   echo "Using prysm-prater.dnp.dappnode.eth"
