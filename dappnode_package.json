@@ -1,6 +1,6 @@
 {
   "name": "goerli-besu.dnp.dappnode.eth",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "description": "An enterprise-grade Java-based, Apache 2.0 licensed Ethereum Execution Layer Client for the Merged Göerli/Prater Testnet",
   "shortDescription": "Java-based Ethereum Client",
   "upstreamVersion": "23.1.3",
