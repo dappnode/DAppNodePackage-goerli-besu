@@ -22,7 +22,7 @@ fields:
       You can read about the differences [here](https://besu.hyperledger.org/en/stable/Concepts/Data-Storage-Formats). 
 
 
-      Standard is BONSAI.
+      Default storage format is BONSAI.
     target:
       type: environment
       name: STORAGE_FORMAT
@@ -35,22 +35,22 @@ fields:
   - title: Sync Mode
     id: sync_mode
     description: >-
-      Besu can use one of four sync modes, FULL (slow, archive node), FAST (fast, full node) or X_SNAP Or the newer X_CHECKPOINT (fastest, experimental and works with BONSAI). 
+      Besu can use one of four sync modes, FULL (slow, archive node), FAST (fast, full node), X_SNAP (Faster than FAST snap sync, full node) or the latest X_CHECKPOINT (fastest, latest, and works with BONSAI). 
 
 
       You can read about the differences [here](https://besu.hyperledger.org/en/stable/Reference/CLI/CLI-Syntax/#sync-mode). 
 
 
-      Standard is FAST.
+      Default Sync Mode is X_CHECKPOINT.
     target:
       type: environment
       name: SYNC_MODE
       service: goerli-besu
     enum:
+      - X_CHECKPOINT
+      - X_SNAP
       - FAST
       - FULL
-      - X_SNAP
-      - X_CHECKPOINT
     required: true
     if: { "config_mode": { "enum": ["advanced"] } }
   - title: Max HTTP RPC connections
