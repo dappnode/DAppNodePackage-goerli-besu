@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # Enable RocksDB high spec for newer CPUs (4-5 years old max) if set.
-if [$HIGH_SPEC_ENABLED = "true"]; then
+if [$HIGH_SPEC_ENABLED == "true"]; then
   echo "High spec enabled"
   EXTRA_OPTS="--Xplugin-rocksdb-high-spec-enabled ${EXTRA_OPTS}"
 fi
