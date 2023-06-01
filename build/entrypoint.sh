@@ -4,6 +4,7 @@
 if [$HIGH_SPEC_ENABLED = "true"]; then
   echo "High spec enabled"
   EXTRA_OPTS="--Xplugin-rocksdb-high-spec-enabled ${EXTRA_OPTS}"
+fi
 
 case "$_DAPPNODE_GLOBAL_CONSENSUS_CLIENT_PRATER" in
 "prysm-prater.dnp.dappnode.eth")
