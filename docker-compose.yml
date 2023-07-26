@@ -21,5 +21,7 @@ services:
       BESU_OPTS: ""
     image: "goerli-besu.goerli-besu.dnp.dappnode.eth:0.1.0"
     restart: unless-stopped
+    security_opt:
+      - "seccomp:unconfined"
 volumes:
   data: {}
