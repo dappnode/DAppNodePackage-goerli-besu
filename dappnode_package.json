@@ -33,7 +33,7 @@
     "endpoint": "http://goerli-besu.dappnode:8545",
     "apiEngine": "http://goerli-besu.dapppnode:8551",
     "homepage": "https://github.com/hyperledger/besu",
-    "docs": "https://besu.hyperledger.org/en/stable/"
+    "docs": "https://besu.hyperledger.org/"
   },
   "bugs": {
     "url": "https://github.com/dappnode/DAppNodePackage-goerli-besu/issues"

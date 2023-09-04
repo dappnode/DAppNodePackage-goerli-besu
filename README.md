@@ -1,14 +1,19 @@
 # Important Info
 
-You can limit the resource usage (eg. RAM) in BESU_OPTS in the Advanced Configuration. Just pass it the standard JVM memory arguments.
+You can limit resource usage (eg. RAM) in BESU_OPTS field in the Advanced Configuration.
+Just pass it standard JVM memory arguments.
 
-Looks like this:
-```
+Example below sets the JVM soft heap size as 8GB and the hard heap size as 12GB:
+
+```bash
 -Xms8G -Xmx12G
 ```
 
-This package by default uses the newer BONSAI storage structure. You can switch it to the older FOREST one in the Settings. Does require a resync and potentially a volume removal.
-# Used Ports
+This package, by default, uses the newer BONSAI storage structure.
+You can change it to the older FOREST structure in the Config Tab.
+Does require a full resync and volume removal.
+
+## Used Ports
 
 | Port | Used For | Exposed |
 | ---- | -------- | ------- |
@@ -18,10 +23,10 @@ This package by default uses the newer BONSAI storage structure. You can switch 
 | 9545 | Metrics  | No      |
 | 30814 | Peer Traffic| Yes  |
 
-# General
+## General
 
 This DAppNode package uses the Besu Execution Client.
 
-# License
+### License
 
 This repository is offered under the Apache 2.0 license. See LICENSE for details.
