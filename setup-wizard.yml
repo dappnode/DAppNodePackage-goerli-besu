@@ -19,10 +19,10 @@ fields:
       Besu can use one of two storage formats, Forest of Tries or Bonsai Tries. 
 
 
-      You can read about the differences [here](https://besu.hyperledger.org/en/stable/Concepts/Data-Storage-Formats). 
+      You can read about the differences [here](https://besu.hyperledger.org/public-networks/concepts/data-storage-formats). 
 
 
-      Default storage format is BONSAI.
+      Default and Reccomended storage format is BONSAI.
     target:
       type: environment
       name: STORAGE_FORMAT
@@ -35,13 +35,13 @@ fields:
   - title: Sync Mode
     id: sync_mode
     description: >-
-      Besu can use one of four sync modes, FULL (slow, archive node), FAST (fast, full node), X_SNAP (Faster than FAST snap sync, full node) or the latest X_CHECKPOINT (fastest, latest, and works with BONSAI). 
+      Besu can use one of four sync modes, FULL (Slow, Full Archive Node, Not Reccomended), FAST (DEPRECATED, Legacy FAST, Full Node), X_SNAP (Legacy, Faster than FAST, Snap Sync, Full Node) or the Latest and Reccomended method, X_CHECKPOINT (Fastest, Latest, Official Reccomended Sync Mode by Hyperledger, Besu's Maintainers and the Dappnode Team). 
 
 
-      You can read about the differences [here](https://besu.hyperledger.org/en/stable/Reference/CLI/CLI-Syntax/#sync-mode). 
+      You can read about the differences [here](https://besu.hyperledger.org/stable/public-networks/reference/cli/options#sync-mode). 
 
 
-      Default Sync Mode is X_CHECKPOINT.
+      Default and Reccomended Sync Mode is X_CHECKPOINT.
     target:
       type: environment
       name: SYNC_MODE
